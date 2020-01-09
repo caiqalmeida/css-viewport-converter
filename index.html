@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <title>Conversor - Px para VW/VH</title>
+</head>
+<body>
+ 
+<div class="wrapper">
+
+  <header>
+    <h1>Converter - Pixel to viewport <span>width/height</span></h1>
+  </header>
+
+<!-- Resolutions -->
+
+  <section class="row">
+
+    <div class="container container-left">
+
+      <div class="container-left__item">
+        <label class="container-left__item__title" for="res_width">Width</label>
+        <input type="number" name="res_width" id="res_width">
+      </div>
+
+      <div class="container-left__item">
+        <label class="container-left__item__title" for="res_width">Height</label>
+        <input type="number" name="res_height" id="res_height">
+      </div>
+
+    </div>
+
+
+
+    <div class="container container-right">
+
+      <h2>Viewport Resolution  <span>PX</span></h2>
+      <p>Insert the resolution of your Window</p>
+
+    </div>
+  
+  </section>
+<!-- Divisor line-->
+
+<div class="line"></div>
+
+<!-- Converters -->
+
+  <section class="row">
+
+    <div class="container container-left">
+
+      <div class="container-left__item">
+        <h3 class="container-left__item__title"><span class="w-color">V</span>iewport <span class="w-color">W</span>idth </h3>
+        <p>0</p>
+      </div>
+
+      <div class="container-left__item">
+        <h3 class="container-left__item__title"><span class="h-color">V</span>iewport <span class="h-color">H</span>eight</h3>
+        <p>0</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="container container-right">
+
+      <h2>Converters <span class="w-color">VW</span> | <span class="h-color">VH</span></h2>
+      <p>Copy the result value</p>
+
+    </div>
+
+  </section>
+
+ <!-- Footer -->
+  <footer>
+    <p>Made with ... a little logic | <a href="https://caiquealmeida.dev/">Caíque Almeida</a> </p>
+  </footer>
+  
+</div>
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>

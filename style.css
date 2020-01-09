@@ -1,0 +1,150 @@
+/* Fonts */
+
+h1, h2,h3, p, a, label, span, input {
+  font-family: 'Roboto', sans-serif;
+  color: #F4F4F4;
+  font-weight: 100;
+}
+
+/* Resets */
+
+*, h1, h2, p, div, span, input, section, footer, button, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+
+}
+
+/* Styles */
+
+body {
+  background: black;
+  padding: 8vh 20vw;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h2 > span {
+  font-weight: bold;
+  font-size: 2em;
+}
+/* --------- Wrapper --------- */
+
+body {
+  height: 100vh;
+  widows: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --------- Header --------- */
+
+header {
+  background: #F0C27B;  
+  background: -webkit-linear-gradient(to right, #4B1248, #F0C27B); 
+  background: linear-gradient(to right, #4B1248, #F0C27B);
+  border-radius: 10px;
+  padding: 20px 60px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #F4F4F4;
+  color: transparent;
+  text-align: right;
+}
+
+h1 > span {
+  font-weight: 700;
+}
+
+/* --------- Sections --------- */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.line {
+  background-color: white;
+  height: 1px;
+}
+
+.row .container {
+  width: 50%;
+  margin: 25px 0;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-left__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-left__item label, .container-left__item input, .container-left__item h3, .container-left__item p {
+  width: 50%;
+}
+
+.container-left__item input {
+    background: black;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.8em;
+
+}
+
+.container-left__item p {
+  text-align: center;
+  padding-top: 14px;
+  font-size: 1.5em;
+}
+
+
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  text-align: right;
+}
+
+.w-color {
+  color: #4B1248 ;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.h-color {
+  color : #F0C27B;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+
+/* --------- Footer --------- */
+
+footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
