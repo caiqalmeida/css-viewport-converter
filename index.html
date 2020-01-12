@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
   <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css">
-  <title>Conversor - Px para VW/VH</title>
+  <title>Converter - PX to VW/VH </title>
 </head>
 <body>
  
@@ -18,7 +18,7 @@
     <h1>Converter - Pixel to viewport <span>width/height</span></h1>
   </header>
 
-<!-- Resolutions -->
+<!-- Viewport Resolutions -->
 
   <section class="row">
 
@@ -26,12 +26,12 @@
 
       <div class="container-left__item">
         <label class="container-left__item__title" for="res_width">Width</label>
-        <input type="number" name="res_width" id="res_width">
+        <input id="window_width" type="number">
       </div>
 
       <div class="container-left__item">
         <label class="container-left__item__title" for="res_width">Height</label>
-        <input type="number" name="res_height" id="res_height">
+        <input id="window_height" type="number">
       </div>
 
     </div>
@@ -50,6 +50,38 @@
 
 <div class="line"></div>
 
+<!-- Object Resolution -->
+
+<section class="row">
+
+  <div class="container container-left">
+
+    <div class="container-left__item">
+      <label class="container-left__item__title" for="res_width">Width</label>
+      <input id="object_width" type="number">
+    </div>
+
+    <div class="container-left__item">
+      <label class="container-left__item__title" for="res_width">Height</label>
+      <input id="object_height" type="number">
+    </div>
+
+  </div>
+
+
+
+  <div class="container container-right">
+
+    <h2>Object Resolution  <span>PX</span></h2>
+    <p>Insert the width and height of your object</p>
+
+  </div>
+
+</section>
+<!-- Divisor line-->
+
+<div class="line"></div>
+
 <!-- Converters -->
 
   <section class="row">
@@ -57,13 +89,13 @@
     <div class="container container-left">
 
       <div class="container-left__item">
-        <h3 class="container-left__item__title"><span class="w-color">V</span>iewport <span class="w-color">W</span>idth </h3>
-        <p>0</p>
+        <h3 class="container-left__item__title">Viewport Width </h3>
+        <p id="result_vw">0</p>
       </div>
 
       <div class="container-left__item">
-        <h3 class="container-left__item__title"><span class="h-color">V</span>iewport <span class="h-color">H</span>eight</h3>
-        <p>0</p>
+        <h3 class="container-left__item__title">Viewport Height</h3>
+        <p id="result_vh">0</p>
       </div>
 
     </div>
@@ -72,7 +104,7 @@
 
     <div class="container container-right">
 
-      <h2>Converters <span class="w-color">VW</span> | <span class="h-color">VH</span></h2>
+      <h2 class="converters-title">Converters <span>VW | VH</span></h2>
       <p>Copy the result value</p>
 
     </div>
@@ -81,9 +113,9 @@
 
  <!-- Footer -->
   <footer>
-    <p>Made with ... a little logic | <a href="https://caiquealmeida.dev/">Caíque Almeida</a> </p>
+    <p>Made with ... just made it | <a href="https://caiquealmeida.dev/">Caíque Almeida</a> </p>
   </footer>
-  
+
 </div>
   <!-- Scripts -->
   <script src="main.js"></script>

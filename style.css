@@ -23,11 +23,21 @@ input {
 body {
   background: black;
   padding: 8vh 20vw;
-  overflow: hidden;
 }
 
 h2 {
   font-size: 1.5em;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 65%;
+  background-color: #8EC5FC;
 }
 
 h2 > span {
@@ -37,8 +47,6 @@ h2 > span {
 /* --------- Wrapper --------- */
 
 body {
-  height: 100vh;
-  widows: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,9 +56,8 @@ body {
 /* --------- Header --------- */
 
 header {
-  background: #F0C27B;  
-  background: -webkit-linear-gradient(to right, #4B1248, #F0C27B); 
-  background: linear-gradient(to right, #4B1248, #F0C27B);
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   border-radius: 10px;
   padding: 20px 60px;
   margin-bottom: 25px;
@@ -97,11 +104,20 @@ h1 > span {
 
 .container-left__item {
   display: flex;
-  justify-content: space-between;
 }
 
-.container-left__item label, .container-left__item input, .container-left__item h3, .container-left__item p {
-  width: 50%;
+.container-left__item label {
+  display: flex;
+  align-items: center;
+}
+
+.container-left__item label,  .container-left__item h3  {
+  width: 150px;
+  font-weight: 600;
+}
+
+.container-left__item input, .container-left__item p {
+  width: 160px;
 }
 
 .container-left__item input {
@@ -114,11 +130,8 @@ h1 > span {
 
 .container-left__item p {
   text-align: center;
-  padding-top: 14px;
   font-size: 1.5em;
 }
-
-
 
 .container-right {
   display: flex;
@@ -128,16 +141,8 @@ h1 > span {
   text-align: right;
 }
 
-.w-color {
-  color: #4B1248 ;
-  font-size: 2em;
-  font-weight: 700;
-}
-
-.h-color {
-  color : #F0C27B;
-  font-size: 2em;
-  font-weight: 700;
+.converters-title::after {
+  background-color: #E0C3FC;
 }
 
 
